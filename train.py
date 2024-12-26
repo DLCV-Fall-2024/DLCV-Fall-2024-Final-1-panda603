@@ -11,7 +11,7 @@ DATA_ROOT = ""
 import os
 from tqdm import tqdm
 import wandb
-wandb.login()
+# wandb.login()
 
 from transformers import AutoProcessor
 
@@ -488,7 +488,7 @@ from lightning.pytorch.loggers import WandbLogger
 from lightning.pytorch.strategies import DDPStrategy
 
 os.environ["WANDB__SERVICE_WAIT"] = "300"
-wandb_logger = WandbLogger(project=WANDB_PROJECT, name=WANDB_NAME)
+# wandb_logger = WandbLogger(project=WANDB_PROJECT, name=WANDB_NAME)
 ddp_strategy = DDPStrategy(find_unused_parameters=True)
 trainer = L.Trainer(
         accelerator="gpu",
@@ -501,7 +501,7 @@ trainer = L.Trainer(
         precision="16-mixed",
         limit_val_batches=5,
         num_sanity_val_steps=0,
-        logger=wandb_logger,
+        # logger=wandb_logger,
         callbacks=[PushToHubCallback()]
 )
 
