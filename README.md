@@ -5,6 +5,7 @@
 
 ```
 conda env create -f environment.yml
+bash download_model.sh
 <簡的training code>
 python3 inference_all.py
 ```
