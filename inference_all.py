@@ -162,9 +162,6 @@ with torch.no_grad():
         image = images[0]
         human_msg = human_msgs[0]
         
-        if sample_id != "Test_general_0" and sample_id != "Test_regional_0" and sample_id != "Test_suggestion_0":
-            continue
-        
         if task != current_task:
             if task in ["regional"]:
                 current_model = PeftModel.from_pretrained(base_model, REGIONAL_PATH)
