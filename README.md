@@ -9,11 +9,13 @@ cd DLCV-Fall-2024-Final-1-panda603
 ```
 1. Create a new environment 
 ```
-conda env create -f environment.yml
+conda create --name dlcv_final python=3.10
 ```
-2. Activate env
+2. Activate env and install package
 ```
 conda activate dlcv_final
+pip install -r requirement.txt
+conda install -c conda-forge libgl
 ```
 3. Download model weights
 ```
