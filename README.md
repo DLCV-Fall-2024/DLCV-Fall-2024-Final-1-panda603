@@ -3,10 +3,30 @@
 # How to run your code?
 * TODO: Please provide the scripts for TAs to reproduce your results, including training and inference. For example, 
 
+0. Redirect to folder
+```
+cd DLCV-Fall-2024-Final-1-panda603 
+```
+1. Create a new environment 
 ```
 conda env create -f environment.yml
+```
+2. Activate env
+```
+conda activate dlcv_final
+```
+3. Download model weights
+```
 bash download_model.sh
-<簡的training code>
+```
+4. Start Training
+> Other training files of different methods are placed in "./train" folder, the "train.py" is only for training one of our methods
+```
+python3 train.py
+```
+5. Start Inferencing
+> Other inferencing files of different methods are placed in "./inference" folder, the "inference_all.py" is only for reproducing the 4.173 on Coda leaderboard
+```
 python3 inference_all.py
 ```
 
