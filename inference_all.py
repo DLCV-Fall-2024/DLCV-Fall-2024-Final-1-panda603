@@ -187,7 +187,7 @@ with torch.no_grad():
         predictions[sample_id] = generated_answer
         print(generated_answer)
 
-        with open("submission_push.json", "w") as f:
+        with open("submission.json", "w") as f:
             json.dump(predictions, f, indent=4)
 
 
