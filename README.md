@@ -4,8 +4,9 @@
 * TODO: Please provide the scripts for TAs to reproduce your results, including training and inference. For example, 
 
 ```
-bash train.sh <Path to gt image folder> <Path to annot file>
-bash inference.sh <Path to gt image folder> <Path to annot file> <Path to predicted file>
+conda env create -f environment.yml
+<簡的training code>
+python3 inference_all.py
 ```
 
 You can add more arguments to the script if you need.
