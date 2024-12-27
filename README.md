@@ -31,8 +31,8 @@ python3 train.py
 ```
 python3 inference_all.py
 ```
-6. We use SSIM (hw4 evaluation metric) to find out which reional task come from general task data 
-> 我們使用 HW4 的 SSIM metric 去找出哪幾張 Regional task 的圖片對應到同一張 Ｇeneral task，這樣就可以把 task1 task2 串連在一起餵給 suggestion 當作參考了
+6. We use SSIM (hw4 evaluation metric) to find out corresponding reional task and general task data 
+> 我們使用 HW4 的 SSIM metric 去找出哪幾張 Regional task 的圖片對應到同一張 Ｇeneral task，這樣就可以把 task1 task2 串連在一起餵給 suggestion 當作參考來訓練 Reviewer 了
 ```
 python3 find_match_general_regional.py
 ```
